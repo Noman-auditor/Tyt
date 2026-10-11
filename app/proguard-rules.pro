@@ -1,0 +1,4 @@
+-keep class com.nora.tunnel.** { *; }
+-keep class hev.htproxy.** { *; }
+-keep class libv2ray.** { *; }
+-keep class go.** { *; }
