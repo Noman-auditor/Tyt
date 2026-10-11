@@ -53,15 +53,3 @@ jobs:
           path: app/build/outputs/apk/debug/*.apk
           if-no-files-found: error
 
-এই workflow "gradlew" ছাড়াই installed Gradle ব্যবহার করবে। তবে আপনার প্রজেক্টের Android Gradle Plugin-এর সঙ্গে Gradle 8.9 compatible হতে হবে।
-
-ধাপ ২: Build চালান
-
-1. ফাইলটি Commit করুন।
-2. "GitHub Actions" (https://github.com/Noman-auditor/Tyt/actions) খুলুন।
-3. নতুন "Build NoraTunnel APK" run-এর ফলাফল দেখুন।
-4. সফল হলে "NoraTunnel-debug-apk" artifact থেকে APK সংগ্রহ করুন।
-
-মনে রাখবেন: APK build সফল হওয়া মানেই VPN-এর সব protocol বাস্তবে কাজ করছে—এমন নয়।
-
-পরবর্তী run-এ যদি error আসে, "What went wrong" অংশটি পাঠান। তখন Gradle, plugin version বা Kotlin compilation-এর আসল সমস্যাটি ঠিক করব।
